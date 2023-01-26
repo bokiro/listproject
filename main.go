@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"sort"
 )
 
 type Storage interface {
@@ -43,8 +42,9 @@ func main() {
 	s.GetAll()
 	s.Sort(f)
 	s.GetAll()
-	n := sort.Slice()
-	sort.Sort()
+	// n := sort.Slice()
+	// sort.Sort()
+	s.DelByIndex(0)
 }
 
 func NewList() (l *List) {
