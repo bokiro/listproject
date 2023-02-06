@@ -13,6 +13,7 @@ func main() {
 	s.Add(8)
 	s.Add(-2)
 	s.Add(3)
+	s.Add(9)
 	s.DelByIndex(5)
 	s.GetAll()
 	s.Sort(f)
