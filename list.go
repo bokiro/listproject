@@ -88,6 +88,7 @@ func (l *List) DelByIndex(index int64) {
 	n.PrevPoint.NextPoint = n.NextPoint
 	n.NextPoint.PrevPoint = n.PrevPoint
 	l.Len--
+	return
 }
 
 func (l *List) Sort(increase func(a, b int64) bool) {
