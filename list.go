@@ -75,6 +75,12 @@ func (l *List) DelByIndex(index int64) {
 		l.Len--
 		return
 	}
+	if index == l.Len-1{
+		l.LastNote.PrevPoint.NextPoint = nil
+		l.LastNote = l.LastNote.PrevPoint
+		l.Len--
+		return
+	}
 	n := l.FirstNote
 	for j := 0; j < int(index); j++ {
 		n = n.NextPoint

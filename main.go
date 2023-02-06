@@ -6,14 +6,14 @@ func main() {
 	f := func(a, b int64) bool {
 		return a > b
 	}
-	s = NewArray()
+	s = NewList()
 	s.Add(34)
 	s.Add(-6)
 	s.Add(2)
 	s.Add(8)
 	s.Add(-2)
 	s.Add(3)
-	s.DelByIndex(1)
+	s.DelByIndex(5)
 	s.GetAll()
 	s.Sort(f)
 	s.GetAll()
